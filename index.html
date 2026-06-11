@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1>My profile</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Zin Mar Hlaing</h2>
+    <div class="about-container">
+      <img src="C:\Users\User\Pictures\profile.jpg" alt="Zin Mar Hlaing">
+      <div class="about-text">
+        <p>I'm a passionate web developer focused on creating beautiful, responsive, and interactive websites. 
+           I love turning ideas into reality using clean code and modern design principles.</p>
+        <p>SKILLS: HTML, CSS, JavaScript, Python,PHP</p>
+        <p>LANGUAGES: Burmese:Native, English: Intermediate, Japanese: Basic, Chinese: Basic 
+        </p>
+        <p>PERSONAL SKILLS: Communication, Team Collaboration, Time Management</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="C:\Users\User\Pictures\3-beauty-jiso.jpg" alt="Project 1">
+        <h3>Onlime Makeup Shop System</h3>
+        <p>Facial Beautiful</p>
+        <a href="https://github.com/zinm43323-lgtm/Online-Makeup-Shop-System" class="btn-small" target="_blank">Github</a>
+      </div>
+      <div class="project-card">
+        <img src="C:\Users\User\Pictures\images (8).jpg" alt="Project 2">
+        <h3>Client Server Chat Application</h3>
+        <p>Intercation messages</p>
+        <a href="https://github.com/zinm43323-lgtm/Client-Server-Chat
+Application" class="btn-small" target="_blank">Github</a>
+      </div>
+      <div class="project-card">
+        <img src="C:\Users\User\Pictures\images (12).jfif" alt="Project 3">
+        <h3>Virtual Paint Application</h3>
+        <p>Hand writing on web-cam</p>
+        <a href="https://github.com/zinm43323-lgtm/Virtual-Paint-App1" class="btn-small" target="_blank">Github</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Phone:959784396637<br>
+       ADDRESS: Kume, Mandalay</p>
+    <a href="mailto:your.email@example.com" class="@zinm43323@gmail.com">zinm43323@gmail.com</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Zin Mar Hlaing. All rights reserved.</p>
+  </footer>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
